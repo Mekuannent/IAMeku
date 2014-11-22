@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>IAMeku</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+	</head>
+	<body style="background-color:#736E6E; height:100%;">
+		<script type="text/x-handlebars">
+			<div class="container-fluid">
+				<div class="row topnav">
+					top nav
+				</div>
+				
+				<div class="row">
+					<nav class="navbar navbar-inverse" style="margin-bottom:0px;">
+					  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <a class="navbar-brand" href="#">IAMeku</a>
+					    </div>
+					    <div>
+					      <ul class="nav navbar-nav">
+					        <li class="active"><a href="#">Home</a></li>
+					        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+					        <li><a href="#">Page 2</a></li> 
+					        <li><a href="#">Page 3</a></li> 
+					      </ul>
+					    </div>
+					  </div>
+					</nav>
+				</div>
+				
+				{{outlet}}
+				
+				<div class="row" style="background-color: black; min-height: 200px;">
+					<div class="col-md-3"></div>
+					
+					<div class="col-md-6">
+						<div class="col-md-2"><h6 style="color:#FCB712;">About me</h6></div>
+						<div class="col-md-2"><h6 style="color:#FCB712;">Information</h6></div>
+						<div class="col-md-2"><h6 style="color:#FCB712;">Key topics</h6></div>
+						<div class="col-md-2"><h6 style="color:#FCB712;">Contact us</h6></div>
+						<div class="col-md-2"><h6 style="color:#FCB712;">Trends</h6></div>
+						<div class="col-md-2"><h6 style="color:#FCB712;">Links</h6></div>
+					</div>
+
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</script>
+
+		<script type="text/x-handlebars" id="index">
+			<div class="row" style="background-color: #E6E6E6; padding-top: 1.5em;">
+				<div class="col-md-12" style="min-height:400px;">			
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<div class="col-md-6">
+							<p>The signing of the deal was announced in Beijing today by Premier Li Keqiang and Prime Minister Stephen Harper, who is on his third official visit to China.</p>
+							<p>Its a great boon for the Canadian business community, both importers and exporters, because they can now do business in China with the currency and not have to go through multiple financial exchange transactions, Stewart Beck, president and CEO of the Asia Pacific Foundation of Canada, told CBC News.</p>
+							<p>So the pundits are saying it could double maybe even triple the level of Canadian trade between Canada and China, he said.</p>
+							<p>Authorized by Chinas central bank, the deal will allow direct business between the Canadian dollar and the Chinese yuan, cutting out the middle man — in most cases, the U.S. dollar.</p>
+						</div>
+						
+						<div class="col-md-6">
+							<img src="http://placepuppy.it/462/297">
+						</div>
+					</div>
+					<div class="col-md-3"></div>
+
+				</div>
+
+				
+				<div class="col-md-12" style="min-height: 150px; background-color: #EFEFEF;">
+					<div class="col-md-3"></div>
+					<div class="col-md-6" style="padding-top:1%;">
+						<div class="col-md-4 bgImg1">
+							<div>
+								<p class="thumbText">What is new on a smarter planet?</p>
+								<p class="thumbDesc">This is a sample short note. I hope it is not overflowing</P>
+							</div>
+						</div>
+						<div class="col-md-4 bgImg2">
+							<p class="thumbText">Accelerate your business</p`>
+						</div>
+						<div class="col-md-4 bgImg3">
+							<p class="thumbText">Face the challenge</p>
+						</div>
+					</div>
+
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</script>
+		<script type="text/x-handlebars" id="about">
+			<div class="row" style="background-color: #E6E6E6; padding-top: 1.5em;">
+				<div class="col-md-12" style="min-height:550px;">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<h3>About Joy Global</h3>
+						<p>Joy Global Inc. is a worldwide leader in high-productivity mining solutions. Through its market-leading P&H and Joy brands, Joy Global manufactures markets, and services original equipment and support parts for the surface and underground mining industries. Joy Globals products and related services are used extensively for the mining of coal, copper, iron ore, oil sands, gold and other mineral resources.</p>
+
+						<p>Joy Global Smart Services leverage major advancements in onboard and off board technologies, and robust communication systems, to produce data-centric recommendations and analyses, from reactive root cause exercises to proactive maintenance prognostics and operational best practices. For more information about Joy Global, please visit: www.joyglobal.com</p>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</script>
+
+		<script src="lib/jquery-1.10.2.js"></script>
+		<script src="lib/handlebars-1.1.2.js"></script>
+		<script src="lib/ember-1.7.0.js"></script>
+		
+		<script src="app/app.js"></script>
+		
+	</body>
+</html>

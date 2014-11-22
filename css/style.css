@@ -1,0 +1,38 @@
+div {
+	display: block;
+}
+
+.topnav{
+	text-align: right;
+	color:#E6E6E6;
+
+	height: 10%;
+	padding-right: 5%;
+}
+
+.bgImg1, .bgImg2, .bgImg3{
+	height:110px;
+}
+.bgImg1 {
+	background-image: url("http://placepuppy.it/275/110");
+	background-repeat: no-repeat;
+}
+.bgImg2 {
+	background-image: url("http://placepuppy.it/276/110");
+	background-repeat: no-repeat;
+}
+.bgImg3 {
+	background-image: url("http://placepuppy.it/274/110");
+	background-repeat: no-repeat;
+}
+
+.thumbText {
+	color: 	#0029A3;
+	padding-right: 10px;
+	font-family: 'Candal', sans-serif;
+	font-size: 1.5em;
+}
+.thumbDesc{
+	padding-right: 10px;
+	font-family: 'Candal', sans-serif;
+}
